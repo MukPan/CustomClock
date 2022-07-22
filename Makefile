@@ -1,2 +1,5 @@
+CC=gcc
+CFLAGS=-O
+
 CustomClock: CustomClock.c
-	gcc -o CustomClock CustomClock.c
+	$(CC) $(CFLAGS) -o CustomClock CustomClock.c -lncurses
